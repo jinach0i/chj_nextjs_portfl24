@@ -4,20 +4,20 @@ import "./globals.css";
 const nanumSquare = localFont({
   src: [
     {
-      path: '../public/fonts/NANUMSQUAREB.ttf',
-      weight: '700',
+      path: '../public/fonts/NanumSquareL.otf',
+      weight: '300',
       style: 'normal',
     },
     {
-      path: '../public/fonts/NANUMSQUAREEB.ttf',
-      weight: '900',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/NANUMSQUARER.ttf',
+      path: '../public/fonts/NanumSquareR.otf',
       weight: '400',
       style: 'normal',
     },
+    {
+      path: '../public/fonts/NanumSquareB.otf',
+      weight: '700',
+      style: 'normal',
+    }
   ],
 });
 
