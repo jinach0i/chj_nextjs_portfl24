@@ -1,5 +1,13 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import "./index.css";
+
+import Header from "@/components/Header";
+import ScrollDown from "@/components/scroll-down";
+import Loading from "./loading";
+import { Suspense } from "react";
+
+
 
 const nanumSquare = localFont({
   src: [
@@ -35,7 +43,9 @@ export default function RootLayout({ children }) {
       <body
         className={nanumSquare.className}
       >
-        {children}
+        <Header />
+        <Suspense fallback={<Loading />}>{children}</Suspense>
+        <ScrollDown />
       </body>
     </html>
   );
